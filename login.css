@@ -1,0 +1,46 @@
+body{
+   background-image:url(bglogin.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+    
+}
+ 
+h3{
+    color:white;
+    text-align: center;
+}
+.p1{
+    color:rgb(245, 248, 245);
+}
+.t1{
+    border: 1px groove white;
+    width: 30%;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color:gray;
+    margin-top: 10%;
+    margin-left: 35%;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.btn{
+	font-size: 14px;
+	margin-top:20px;
+    
+}
+input[type=text]{
+width: 100%;
+padding: 8px;
+margin: 8px 0px;  
+display: inline-block;
+border-radius: 5px; 
+}
+
+input[type=password]{
+    width: 100%;    
+    padding: 8px;  
+    margin: 8px 0;
+    border-radius: 5px; 
+    }
