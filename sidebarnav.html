@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <title>practice</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+        <style>
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+.sidebar{
+    position: fixed;
+    left:-250px;
+    width:250px;
+    height: 100%;
+    background-color: black;
+    color: white;
+    transition: all .5s;
+}
+.sidebar header{
+    font-size:22px;
+    color:white;
+    text-align: center;
+    line-height:70px;
+    background-color: gray;
+    user-select: none;
+}
+.sidebar ul a{
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top:1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+}
+ul li:hover a {
+    padding-left: 40px;
+}
+.sidebar ul a i{
+    margin-right:16px;
+}
+#check{
+    display: none   ;
+}
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 3px;
+}
+label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color:white;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: red;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events:none;
+}
+#check:checked ~ label #cancel{
+    left: 195px;
+}
+section{
+    background: url(bglogin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    transition: all .5s;
+}
+#check:checked ~ section{
+    margin-left: 250px;
+}
+        </style>
+        <script>
+          
+        </script>
+    </head>
+    <body>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>            
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+        <div class="sidebar">
+            <header>MyApp</header>
+<ul>
+    <li><a href="#"><i class="fa fa-qrcode" aria-hidden="true"></i>Dashboard</a></li>
+    <li><a href="#"><i class="fa fa-link" aria-hidden="true"></i>Shortcuts  </a></li>
+    <li><a href="#"><i class="fa fa-stream" aria-hidden="true"></i>Overview</a></li>
+    <li><a href="#"><i class="fa fa-calendar-week" aria-hidden="true"></i>Events</a></li>
+    <li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i>About</a></li>
+    <li><a href="#"><i class="fa fa-sliders-h" aria-hidden="true"></i>Services</a></li>
+    <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>Contact</li></a></li>
+
+</ul>
+        </div>
+<section></section>
+    </body>
+</html>
